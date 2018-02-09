@@ -1,18 +1,8 @@
 import { time } from './times.js';
 
-export function yearToSeconds(years, planet){
-  let result = years
-  switch(planet){
-      case "earth":
-        result *= time.year;
-        break;
-      case "mercury":
-        result *= time.mercury;
-        break;
-      default:
-        console.log("not a planet we track");
-        break;
-  }
+export function yearToSeconds(planet){
+  let result = 1
+  result *= time[planet];
   result *= time.day; //almost certainly a more elegant way to write this, but written for clarity
   result *= time.hour;
   result *= time.minute;
@@ -24,7 +14,7 @@ export function compareDate(dayOne, dayTwo){
   return result/1000;
 }
 
-export function yearsOnMercury(time){
-  const mercAge = time/yearToSeconds(1, "mercury");
+export function yearsInSpace(time, planet){
+  const mercAge = time/yearToSeconds(planet);
   return mercAge;
 }

@@ -6,7 +6,7 @@ describe( 'Age', function() {
 //convert age in years to seconds
   describe('yearToSeconds', function(){
     it("should convert a number of years into seconds", function(){
-      assert.equal(31536000 , Age.yearToSeconds(1, "earth"));
+      assert.equal(31536000 , Age.yearToSeconds("earth"));
     });
   });
 
@@ -19,12 +19,12 @@ describe( 'Age', function() {
     })
   })
 //return age in Mercury years (.24 earth years)
-  describe('yearsOnMercury', function(){
+  describe('yearsInSpace', function(){
     it("should calculate a given amount of time in Mercury years (.24 Earth years)", function(){
       const dayOne = new Date(1992, 11, 28);
       const dayTwo = new Date(2018, 1, 9);
       const age = Age.compareDate(dayOne, dayTwo);
-      assert(Age.yearsOnMercury(age) > 104 && Age.yearsOnMercury(age) < 108.4)
+      assert(Age.yearsInSpace(age, 'mercury') > 104 && Age.yearsInSpace(age, 'mercury') < 108.4)
     })
   })
 
