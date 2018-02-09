@@ -58,9 +58,4 @@ describe('yearsInSpace', function(){
     assert(Age.yearsInSpace(age, 'Jupiter') > 2.10 && Age.yearsInSpace(age, 'Jupiter') < 2.19)
   })
 })
-
-//calc life expectancy, convert into { planet } years
-
-//check if user has already exceeded life expectancy
-
 })

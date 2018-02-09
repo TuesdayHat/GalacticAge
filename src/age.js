@@ -10,7 +10,12 @@ export function yearToSeconds(planet){
 }
 
 export function compareDate(dayOne, dayTwo){
-  let result = dayTwo - dayOne;
+  let result;
+  if (dayTwo > dayOne){
+    result = dayTwo - dayOne;
+  } else {
+    result = dayOne-dayTwo;
+  }
   return result/1000;
 }
 
