@@ -1,8 +1,6 @@
-import * as Age from '../src/age.js';
-const assert = require( 'assert' );
+import {time} from 'times.js';
 
-describe( 'Age', function() {
-
-
-
-})
+export function yearToSeconds(years){
+  let result = years * time.year ;
+  return result
+}

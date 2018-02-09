@@ -3,13 +3,10 @@
   "version": "1.0.0",
   "description": "Feb 9 Independant Project",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "dev": "webpack-dev-server --open --config config/webpack.dev.js",
-		"prod": "webpack --config config/webpack.prod.js",
-		"test": "mocha-webpack --webpack-config config/webpack.test.js \"test/**/*test.js\""
+    "prod": "webpack --config config/webpack.prod.js",
+    "test": "mocha-webpack --webpack-config config/webpack.test.js \"test/**/*test.js\""
   },
   "repository": {
     "type": "git",
