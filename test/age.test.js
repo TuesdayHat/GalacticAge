@@ -25,15 +25,38 @@ describe( 'Age', function() {
       const dayTwo = new Date(2018, 1, 9);
       const age = Age.compareDate(dayOne, dayTwo);
       assert(Age.yearsInSpace(age, 'mercury') > 104 && Age.yearsInSpace(age, 'mercury') < 108.4)
+      //rounding because I refuse to work out my space age by hand to check this down the the second. I'm writing an app for that.
     })
   })
 
 //return age in Venus years (.62 earth years)
+describe('yearsInSpace', function(){
+  it("should calculate a given amount of time in Venus years (.62 Earth years)", function(){
+    const dayOne = new Date(1992, 11, 28);
+    const dayTwo = new Date(2018, 1, 9);
+    const age = Age.compareDate(dayOne, dayTwo);
+    assert(Age.yearsInSpace(age, 'venus') > 40.3 && Age.yearsInSpace(age, 'venus') < 41.9)
+  })
+})
 
 //return age in Mars years (1.88 earth years)
-
+describe('yearsInSpace', function(){
+  it("should calculate a given amount of time in Mars years (1.88 Earth years)", function(){
+    const dayOne = new Date(1992, 11, 28);
+    const dayTwo = new Date(2018, 1, 9);
+    const age = Age.compareDate(dayOne, dayTwo);
+    assert(Age.yearsInSpace(age, 'mars') > 13.29 && Age.yearsInSpace(age, 'mars') < 13.82)
+  })
+})
 //return age in Jupiter years (11.86 earth years)
-
+describe('yearsInSpace', function(){
+  it("should calculate a given amount of time in Jupiter years (11.86 Earth years)", function(){
+    const dayOne = new Date(1992, 11, 28);
+    const dayTwo = new Date(2018, 1, 9);
+    const age = Age.compareDate(dayOne, dayTwo);
+    assert(Age.yearsInSpace(age, 'jupiter') > 2.10 && Age.yearsInSpace(age, 'jupiter') < 2.19)
+  })
+})
 //calc life expectancy, convert into { planet } years
 
 //check if user has already exceeded life expectancy
