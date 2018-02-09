@@ -9,5 +9,6 @@ export function yearToSeconds(years){
 }
 
 export function compareDate(dayOne, dayTwo){
-
+  let result = dayTwo - dayOne
+  return result/1000;
 }
