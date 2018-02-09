@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Space Age Calculator</title>
+	</head>
+	<body>
+		<div class="container">
+      <div class="row">
+        <div class="col-md-4" id="left"></div>
+
+        <div class="col-md-4" id="center" >
+          <form class="form-inline" id="spaceAge">
+          <!-- <form id="spaceAge"> -->
+
+            <div class="form-group">
+              <!-- <label for="birthDate">Enter the date you were born</label>
+              <input id="birthDate" class="form-control" type="date" > -->
+
+              <select class="form-control day" name="month" id="inputMonth" placeholder="Month">
+                  <option value="0">January</option>
+                  <option value="1">February</option>
+                  <option value="2">March</option>
+                  <option value="3">April</option>
+                  <option value="4">May</option>
+                  <option value="5">June</option>
+                  <option value="6">July</option>
+                  <option value="7">August</option>
+                  <option value="8">September</option>
+                  <option value="9">October</option>
+                  <option value="10">November</option>
+                  <option value="11">December</option>
+                </select>
+                <input class="form-control day" type=number id="inputDate" placeholder="Date"></input>
+                <input class="form-control day" type=number id="inputYear" placeholder="Year"></input>
+
+              <select class="form-control" id="planets">
+                <option value="Earth">Earth</option>
+                <option value="Mercury">Mercury</option>
+                <option value="Venus">Venus</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jupiter</option>
+              </select>
+            </div>
+            <button type="submit" id="calculateAge">Find your Age!</button>
+            <!-- </form> -->
+        </form>
+          <div id="formOutput">
+          </div>
+
+        </div>
+
+        <div class="col-md-4" id="right"></div>
+      </div>
+
+		</div>
+	</body>
+</html>

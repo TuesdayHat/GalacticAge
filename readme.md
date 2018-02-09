@@ -23,7 +23,7 @@ _ put in a date, get back your age one Earth, Mercury, Venus, Mars and Jupiter. 
 * none at this time
 
 ## Technologies Used
-* javascript
+* JavaScript
 * html
 * WebPack
 * mocha

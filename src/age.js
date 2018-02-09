@@ -1,16 +1,16 @@
 import { time } from './times.js';
 
 export function yearToSeconds(planet){
-  let result = 1
+  let result = 1;
   result *= time[planet];
   result *= time.day; //almost certainly a more elegant way to write this, but written for clarity
   result *= time.hour;
   result *= time.minute;
-  return result
+  return result;
 }
 
 export function compareDate(dayOne, dayTwo){
-  let result = dayTwo - dayOne
+  let result = dayTwo - dayOne;
   return result/1000;
 }
 

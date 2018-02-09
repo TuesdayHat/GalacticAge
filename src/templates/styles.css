@@ -1,0 +1,13 @@
+body{
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.form-control{
+  text-align: center;
+}
+
+.day{
+  max-width: 25%;
+}
