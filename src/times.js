@@ -3,6 +3,6 @@ export const time = {
   "day": 24, //hours
   "hour": 60, //minute
   "minute": 60, //seconds
-  "mercury": 0.24,
+  "mercury": (0.24*365),
 
 }
