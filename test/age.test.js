@@ -13,10 +13,8 @@ describe( 'Age', function() {
 //take two dates and compare the difference
   describe('compareDate', function(){
     it("should calculate the difference in seconds between two dates", function(){
-      var dayOne = new Date(2018, 0, 27);
-      var dayTwo = new Date(2018, 1, 6);
-      // dayOne.setFullYear(2018).setMonth(0).setDate(27);
-      // dayTwo.setFullYear(2018).setMonth(1).setDate(6);
+      var dayOne = new Date(2018, 0, 27); //January 27th, 2018
+      var dayTwo = new Date(2018, 1, 6); //February 6th, 2018
       assert.equal(950400, Age.compareDate(dayOne, dayTwo));
     })
   })
