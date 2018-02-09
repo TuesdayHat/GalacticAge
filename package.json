@@ -4,9 +4,9 @@
   "description": "Feb 9 Independant Project",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --open --config config/webpack.dev.js",
-    "prod": "webpack --config config/webpack.prod.js",
-    "test": "mocha-webpack --webpack-config config/webpack.test.js \"test/**/*test.js\""
+    "dev": "webpack-dev-server --open --config webpack.dev.js",
+    "prod": "webpack --config webpack.prod.js",
+    "test": "mocha-webpack --webpack-config webpack.test.js \"test/**/*test.js\""
   },
   "repository": {
     "type": "git",
@@ -36,5 +36,8 @@
   "bugs": {
     "url": "https://github.com/TuesdayHat/GalacticAge/issues"
   },
-  "homepage": "https://github.com/TuesdayHat/GalacticAge#readme"
+  "homepage": "https://github.com/TuesdayHat/GalacticAge#readme",
+  "directories": {
+    "test": "test"
+  }
 }
