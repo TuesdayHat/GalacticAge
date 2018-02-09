@@ -1,0 +1,22 @@
+{
+  "name": "galacticage",
+  "version": "1.0.0",
+  "description": "Feb 9 Independant Project",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TuesdayHat/GalacticAge.git"
+  },
+  "author": "Adam Calhoun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TuesdayHat/GalacticAge/issues"
+  },
+  "homepage": "https://github.com/TuesdayHat/GalacticAge#readme"
+}
